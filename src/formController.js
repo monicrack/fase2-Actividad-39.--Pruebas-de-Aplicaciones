@@ -1,6 +1,7 @@
 /* const { validarNombre, validarEmail, validarComentario } = require("./validators.js");
 const { limpiarErrores } = require("./ui.js"); */
-
+/*segura que el formulario solo se envíe con datos válidos, muestra errores al usuario
+ en tiempo real y guarda la información en el almacenamiento local del navegador.*/
 function inicializarFormulario() {
 
   const formulario = document.getElementById("formPartida");

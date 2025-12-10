@@ -1,3 +1,4 @@
+// Exportamos la configuración de Puppeteer para Jest-Puppeteer
 module.exports = {
   launch: {
     headless: true, // o false si quieres ver el navegador

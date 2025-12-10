@@ -1,3 +1,4 @@
+//test comprueba que un conjunto de datos válidos
 const { validarNombre, validarEmail, validarComentario } = require("../src/validators");
 
 test("Validaciones múltiples correctas", () => {

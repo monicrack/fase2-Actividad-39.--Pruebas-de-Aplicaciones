@@ -1,3 +1,5 @@
+/*test valida rendimiento, asegurando que la función se ejecuta miles de veces
+ en menos de un milisegundo. */
 const { validarNombre } = require("../src/validators");
 
 test("validarNombre rápido (<5ms en 5000 ejecuciones)", () => {

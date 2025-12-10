@@ -1,4 +1,3 @@
-
 /**
  * Valida un email usando expresión regular básica.
  * @param {string} email

@@ -1,4 +1,5 @@
-
+/*conjunto de pruebas cubre los casos básicos de validación para nombres,
+ correos electrónicos y comentarios*/
 const { validarNombre, validarEmail, validarComentario } = require("../src/validators");
 
 test("Nombre válido", () => {
