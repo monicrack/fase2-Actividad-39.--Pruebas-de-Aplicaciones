@@ -1,0 +1,10 @@
+config:
+  target: "http://localhost:63342"
+  phases:
+    - duration: 60
+      arrivalRate: 20
+
+scenarios:
+  - flow:
+      - get:
+          url: "/38validacion_formularios/index.html?_ijt=kjnakjdtom0mojrnje2fmstsb7&_ij_reload=RELOAD_ON_SAVE"

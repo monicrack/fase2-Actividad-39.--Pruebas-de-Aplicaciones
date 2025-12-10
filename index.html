@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 38 - Gestión de jugadores y partidas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Actividad 38 - Gestión de jugadores y partidas</h2>
+
+  <form id="formPartida" novalidate>
+      <label>Nombre del jugador blancas:</label>
+      <input type="text" id="nombreBlancas" name="nombre" placeholder="Ej: Magnus Carlsen">
+      <p class="error" id="errNombreBlancas"></p>
+
+
+      <label>Nombre del jugador negras:</label>
+      <input type="text" id="nombreNegras" name="nombre" placeholder="Ej: Anish Giri">
+      <p class="error" id="errNombreNegras"></p>
+
+      <label>Color elegido:</label>
+      <input type="radio" id="colorBlancas" name="color" value="blancas">
+      <label for="colorBlancas">Blancas</label>
+      <input type="radio" id="colorNegras" name="color" value="negras">
+      <label for="colorNegras">Negras</label>
+      <p class="error" id="errColor"></p>
+
+      <label>Resultado:</label>
+      <select id="resultado" name="resultado">
+          <option value="">Selecciona</option>
+          <option value="gananBlancas">Ganan blancas</option>
+          <option value="gananNegras">Ganan negras</option>
+          <option value="tablas">Tablas</option>
+      </select>
+      <p class="error" id="errResultado"></p>
+
+
+      <label>Email de contacto:</label>
+      <input type="email" id="email" name="email" placeholder="Ej: ejemplo@mail.com" required>
+      <p class="error" id="errEmail"></p>
+
+
+      <label>Fecha de partida:</label>
+      <input type="date" id="fechaPartida" name="fecha" required>
+      <p class="error" id="errFechaPartida"></p>
+
+
+      <label>Comentario:</label>
+      <textarea id="comentario" name="comentario" placeholder="Máx. 200 caracteres" ></textarea>
+      <p class="error" id="errComentario"></p>
+
+    <button>Registrar</button>
+  </form>
+
+  <p id="mensajeExito"></p>
+
+  <script src="ut05Act38Benavides.js"></script>
+</body>
+</html>
