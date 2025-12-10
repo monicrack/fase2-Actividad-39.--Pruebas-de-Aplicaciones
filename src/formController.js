@@ -1,5 +1,5 @@
-const { validarNombre, validarEmail, validarComentario } = require("./validators");
-const { limpiarErrores } = require("./ui");
+/* const { validarNombre, validarEmail, validarComentario } = require("./validators.js");
+const { limpiarErrores } = require("./ui.js"); */
 
 function inicializarFormulario() {
 
@@ -26,7 +26,7 @@ function inicializarFormulario() {
 
   inputNombreBlancas.addEventListener("input", () => {
     if (!validarNombre(inputNombreBlancas.value.trim())) {
-      errNombreBlancas.textContent = "Nombre inválido (mínimo 3 letras)";
+      errNombreBlancas.textContent = "Nombre inválido (mínimo 3 letras sin números)";
     } else {
       errNombreBlancas.textContent = "";
     }
@@ -156,4 +156,4 @@ function inicializarFormulario() {
   });
 }
 
-module.exports = { inicializarFormulario };
+// module.exports = { inicializarFormulario };

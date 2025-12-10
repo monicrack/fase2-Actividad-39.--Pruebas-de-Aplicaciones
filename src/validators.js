@@ -21,4 +21,4 @@ function validarComentario(comentario) {
   return comentario.length <= 200;
 }
 
-module.exports = { validarNombre, validarEmail, validarComentario };
+// module.exports = { validarNombre, validarEmail, validarComentario };

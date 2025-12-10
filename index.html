@@ -2,12 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Actividad 38 - Gestión de jugadores y partidas</title>
+  <title></title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Actividad 38 - Gestión de jugadores y partidas</h2>
-
   <form id="formPartida" novalidate>
       <label>Nombre del jugador blancas:</label>
       <input type="text" id="nombreBlancas" name="nombre" placeholder="Ej: Magnus Carlsen">
@@ -49,11 +47,13 @@
       <textarea id="comentario" name="comentario" placeholder="Máx. 200 caracteres" ></textarea>
       <p class="error" id="errComentario"></p>
 
-    <button>Registrar</button>
+    <button type="submit">Registrar</button>
   </form>
 
   <p id="mensajeExito"></p>
 
-  <script src="ut05Act38Benavides.js"></script>
+  <script src="src/validators.js"></script>
+  <script src="src/formController.js"></script>
+  <script src="src/main.js"></script>
 </body>
 </html>

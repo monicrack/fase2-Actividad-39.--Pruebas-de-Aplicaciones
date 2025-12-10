@@ -7,4 +7,4 @@ config:
 scenarios:
   - flow:
       - get:
-          url: "/38validacion_formularios/index.html?_ijt=kjnakjdtom0mojrnje2fmstsb7&_ij_reload=RELOAD_ON_SAVE"
+          url: "/act39/fase2-Actividad-39.--Pruebas-de-Aplicaciones/index.html?_ijt=s4pvr09rbnreh1uq8qr3f0lvc3&_ij_reload=RELOAD_ON_SAVE"

@@ -4,4 +4,4 @@ function limpiarErrores() {
   document.getElementById("mensajeExito").textContent = "";
 }
 
-module.exports = { limpiarErrores };
+// module.exports = { limpiarErrores };
