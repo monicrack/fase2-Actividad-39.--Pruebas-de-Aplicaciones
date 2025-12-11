@@ -5,6 +5,11 @@ pruebas unitarias, de funcionalidad, de integración y de rendimiento
 ## Alcance
 -Este proyecto incluye un conjunto de validadores (validarNombre, validarEmail, validarComentario) y un conjunto de pruebas automatizadas con Jest para garantizar su correcto funcionamiento, rendimiento y robustez.
 
+## - Correcto funcionamiento (pruebas unitarias)  
+- Comprobación funcional de reglas (pruebas de funcionalidad)  
+- Validación conjunta de datos (pruebas de integración)  
+- Evaluación del rendimiento (pruebas de performance)
+
 ## Contenido de las pruebas:
 
 A continuación se detallan todos los tests incluidos en el proyecto:
@@ -66,6 +71,15 @@ por:
 ```bash
 npm test
 ```
+# Pruebas de carga con Artillery
+
+Este escenario genera:
+
+- 60 segundos de prueba
+
+- 20 peticiones por segundo
+
+- Un flujo de solicitudes GET a la página del formulario
 
 
 
