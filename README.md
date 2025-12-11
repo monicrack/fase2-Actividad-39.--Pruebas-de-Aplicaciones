@@ -5,7 +5,7 @@ pruebas unitarias, de funcionalidad, de integración y de rendimiento
 ## Alcance
 -Este proyecto incluye un conjunto de validadores (validarNombre, validarEmail, validarComentario) y un conjunto de pruebas automatizadas con Jest para garantizar su correcto funcionamiento, rendimiento y robustez.
 
-##Contenido de las pruebas:
+## Contenido de las pruebas:
 
 A continuación se detallan todos los tests incluidos en el proyecto:
 
@@ -25,7 +25,7 @@ Verifica que un conjunto completo de datos válidos (nombre, email y comentario)
 
 Se valida que la función validarNombre pueda ejecutarse 5000 veces en menos de 1 ms, comprobando así su eficiencia.
 
-##Cómo ejecutar los tests
+## Cómo ejecutar los tests
 
 Asegúrate de tener Jest instalado y ejecuta:
 
@@ -33,8 +33,7 @@ npm test
 
 Para instalar **Jest**, sigue estos pasos según tu entorno Node.js:
 
-
-#Instalar Jest (método estándar)
+# Instalar Jest (método estándar)
 
 1. Inicializa tu proyecto (si aún no lo hiciste):
 
