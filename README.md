@@ -3,37 +3,70 @@ pruebas unitarias, de funcionalidad, de integración y de rendimiento
  # Documento de pruebas del formulario de torneo (ut5)
 
 ## Alcance
-- Validación de campos, feedback de errores, envío, almacenamiento en localStorage y rendimiento de interacciones básicas.
+-Este proyecto incluye un conjunto de validadores (validarNombre, validarEmail, validarComentario) y un conjunto de pruebas automatizadas con Jest para garantizar su correcto funcionamiento, rendimiento y robustez.
 
-## Entorno
-- WebStorm + Jest (JSDOM), @testing-library/dom, @testing-library/jest-dom.
-- Coverage habilitado.
+##Contenido de las pruebas:
 
-## Pruebas unitarias
-- Funciones: validarNombre, validarEmailStr, validarComentarioStr, validarFechaNoFutura.
-- Casos:
-  - Nombre: <3 letras (rechazo), acentos y espacios (acepta).
-  - Email: sin @ (rechazo), formato básico (acepta).
-  - Comentario: 201 chars (rechazo), vacío (acepta).
-  - Fecha: vacía (rechazo), futura (rechazo), hoy (acepta).
-- Resultado: 100% passed. Coverage: XX% líneas.
+A continuación se detallan todos los tests incluidos en el proyecto:
 
-## Pruebas de funcionalidad (DOM)
-- Flujo: submit sin datos => errores y mensaje rojo.
-- Flujo: datos válidos => mensaje verde y limpieza de formulario.
-- Resultado: 100% passed.
+1. Tests unitarios de validación básica
 
-## Pruebas de integración (DOM + localStorage)
-- Guardado: crea `partidas` y agrega objetos con campos correctos.
-- Acumulación: dos envíos => longitud 2.
-- Resultado: 100% passed.
+Estos tests verifican que los validadores funcionan correctamente en los casos más comunes.
 
-## Pruebas de rendimiento
-- Input validación: < 2 ms (JSDOM).
-- Submit + localStorage: < 5 ms (JSDOM).
-- Resultado: OK dentro de presupuesto.
+2. Test que verifica rechazo de comentarios largos
 
-## Observaciones y mejoras
-- Separación de validadores mejoró testabilidad y cobertura.
-- Considerar mensajes accesibles (aria-live) para feedback y pruebas de accesibilidad futuras.
+Este test comprueba que los comentarios que superen los 200 caracteres se rechacen correctamente.
+
+3. Test de integración
+
+Verifica que un conjunto completo de datos válidos (nombre, email y comentario) pase la validación correctamente.
+
+4. Test de rendimiento
+
+Se valida que la función validarNombre pueda ejecutarse 5000 veces en menos de 1 ms, comprobando así su eficiencia.
+
+##Cómo ejecutar los tests
+
+Asegúrate de tener Jest instalado y ejecuta:
+
+npm test
+
+Para instalar **Jest**, sigue estos pasos según tu entorno Node.js:
+
+
+#Instalar Jest (método estándar)
+
+1. Inicializa tu proyecto (si aún no lo hiciste):
+
+```bash
+npm init -y
+```
+
+2. Instala Jest como dependencia de desarrollo:
+
+```bash
+npm install --save-dev jest
+```
+
+3. Configura el script de test en `package.json`:
+
+En tu `package.json`, cambia:
+
+```json
+"test": "echo \"Error: no test specified\" && exit 1"
+```
+
+por:
+
+```json
+"test": "jest"
+```
+
+# Ejecutar los tests
+
+```bash
+npm test
+```
+
+
 
